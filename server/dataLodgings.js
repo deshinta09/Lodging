@@ -1,0 +1,185 @@
+const data = [
+    {
+        "name": "Luxury Suite",
+        "facility": "Spa, Gym, Pool",
+        "roomCapacity": 2,
+        "imgUrl": "https://plus.unsplash.com/premium_photo-1661963630748-3de7ab820570?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "location": "City Center",
+        "price": 200,
+        "typeId": 1,
+        "authorId": 1, 
+        "createdAt": new Date(),
+        "updatedAt":new Date()
+    },
+    {
+        "name": "Cozy Cabin",
+        "facility": "Fireplace, Kitchenette",
+        "roomCapacity": 4,
+        "imgUrl": "https://images.unsplash.com/photo-1631756964162-25c8c07579b5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "location": "Mountain Retreat",
+        "price": 150,
+        "typeId": 2,
+        "authorId": 2, 
+        "createdAt": new Date(),
+        "updatedAt":new Date()
+    },
+    {
+        "name": "Beachfront Villa",
+        "facility": "Private Beach Access, Jacuzzi",
+        "roomCapacity": 6,
+        "imgUrl": "https://images.unsplash.com/photo-1677747354829-a5d89cd8048c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "location": "Tropical Paradise",
+        "price": 300,
+        "typeId": 5,
+        "authorId": 3, 
+        "createdAt": new Date(),
+        "updatedAt":new Date()
+    },
+    {
+        "name": "Riverside Cottage",
+        "facility": "Fishing Dock, BBQ Area",
+        "roomCapacity": 3,
+        "imgUrl": "https://images.unsplash.com/photo-1694885186013-5aa7d91ae5d5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "location": "Quiet Riverbank",
+        "price": 120,
+        "typeId": 2,
+        "authorId": 1, 
+        "createdAt": new Date(),
+        "updatedAt":new Date()
+    },
+    {
+        "name": "Mountain Chalet",
+        "facility": "Sauna, Ski Storage",
+        "roomCapacity": 8,
+        "imgUrl": "https://plus.unsplash.com/premium_photo-1663100126765-1ad02ca4ff69?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "location": "Alpine Peaks",
+        "price": 250,
+        "typeId": 1,
+        "authorId": 2, 
+        "createdAt": new Date(),
+        "updatedAt":new Date()
+    },
+    {
+        "name": "Historic Manor",
+        "facility": "Ballroom, Library",
+        "roomCapacity": 10,
+        "imgUrl": "https://plus.unsplash.com/premium_photo-1678918363395-800a7ebf4376?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "location": "Countryside Estate",
+        "price": 400,
+        "typeId": 3,
+        "authorId": 4,
+        "createdAt": new Date(),
+        "updatedAt":new Date()
+    },
+    {
+        "name": "Treetop Bungalow",
+        "facility": "Canopy Bed, Rainforest Views",
+        "roomCapacity": 2,
+        "imgUrl": "https://images.unsplash.com/photo-1529316275402-0462fcc4abd6?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "location": "Jungle Hideaway",
+        "price": 180,
+        "typeId": 2,
+        "authorId": 2, 
+        "createdAt": new Date(),
+        "updatedAt":new Date()
+    },
+    {
+        "name": "Desert Oasis",
+        "facility": "Swimming Pool, Camel Rides",
+        "roomCapacity": 6,
+        "imgUrl": "https://images.unsplash.com/photo-1601054110056-ed47ff702d40?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "location": "Sahara Dunes",
+        "price": 280,
+        "typeId": 3,
+        "authorId": 2, 
+        "createdAt": new Date(),
+        "updatedAt":new Date()
+    },
+    {
+        "name": "Lakeside Retreat",
+        "facility": "Boat Dock, Fishing",
+        "roomCapacity": 4,
+        "imgUrl": "https://plus.unsplash.com/premium_photo-1661963364785-4423658c45e4?q=80&w=1475&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "location": "Tranquil Lake",
+        "price": 200,
+        "typeId": 2,
+        "authorId": 1, 
+        "createdAt": new Date(),
+        "updatedAt":new Date()
+    },
+    {
+        "name": "Skyline Penthouse",
+        "facility": "City Views, Rooftop Terrace",
+        "roomCapacity": 2,
+        "imgUrl": "https://images.unsplash.com/photo-1565623833408-d77e39b88af6?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "location": "Downtown Metropolis",
+        "price": 500,
+        "typeId": 1,
+        "authorId": 2, 
+        "createdAt": new Date(),
+        "updatedAt":new Date()
+    },
+    {
+        "name": "Island Hideout",
+        "facility": "Private Beach, Palm Trees",
+        "roomCapacity": 4,
+        "imgUrl": "https://images.unsplash.com/flagged/photo-1576061798518-fb0500878ba7?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "location": "Tropical Island",
+        "price": 350,
+        "typeId": 5,
+        "authorId": 4, 
+        "createdAt": new Date(),
+        "updatedAt":new Date()
+    },
+    {
+        "name": "Countryside Cottage",
+        "facility": "Garden, Fireplace",
+        "roomCapacity": 5,
+        "imgUrl": "https://images.unsplash.com/photo-1664747477943-b23ed31972c0?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "location": "Rural Meadows",
+        "price": 180,
+        "typeId": 5,
+        "authorId": 2, 
+        "createdAt": new Date(),
+        "updatedAt":new Date()
+    },
+    {
+        "name": "Rooftop Studio",
+        "facility": "Panoramic Views, Kitchenette",
+        "roomCapacity": 2,
+        "imgUrl": "https://plus.unsplash.com/premium_photo-1664299048765-10e2d631dc6a?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "location": "Urban Skyline",
+        "price": 220,
+        "typeId": 3,
+        "authorId": 1, 
+        "createdAt": new Date(),
+        "updatedAt":new Date()
+    },
+    {
+        "name": "Forest Cabin",
+        "facility": "Hiking Trails, Wildlife",
+        "roomCapacity": 3,
+        "imgUrl": "https://plus.unsplash.com/premium_photo-1686090449192-4ab1d00cb735?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "location": "Deep Woods",
+        "price": 130,
+        "typeId": 3,
+        "authorId": 2, 
+        "createdAt": new Date(),
+        "updatedAt":new Date()
+    },
+    {
+
+        "name": "Seaside Bungalow",
+        "facility": "Ocean Views, Hammocks",
+        "roomCapacity": 2,
+        "imgUrl": "https://media.istockphoto.com/id/1172847250/id/foto/wanita-menikmati-liburan-pagi-di-bungalow-pantai-tropis-tampak-pemandangan-laut-liburan-santai.jpg?s=1024x1024&w=is&k=20&c=59gOO1U6KMwHC1C9mGGpDEEU5EmTiUB6xR0K8IxXP-4=",
+        "location": "Sandy Shore",
+        "price": 180,
+        "typeId": 2,
+        "authorId": 3, 
+        "createdAt": new Date(),
+        "updatedAt":new Date()
+    }
+]
+
+module.exports=data
